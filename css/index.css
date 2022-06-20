@@ -1,0 +1,29 @@
+.dropdown {
+	position: absolute;
+	transform: scaleY(0);
+	top: 100%;
+	padding: 0;
+}
+li {
+	position: relative;
+	float: left;
+	width: 100px;
+	height: 40px;
+	background-color: dodgerblue;
+	border: 1px solid black;
+	
+}
+li:hover > a+ul.dropdown {
+	transform: scaleY(1)
+}
+ul {
+	list-style: none;
+}
+a {
+	color: aliceblue;
+	text-decoration: none;
+}
+.position {
+	left: 100%;
+	top: 0;
+}
